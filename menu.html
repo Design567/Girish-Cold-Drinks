@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @include head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a2470">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Kaushan+Script&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+  /* Mark JS early so reveal styles apply without a flash; play the entry curtain only on internal navigation. */
+  (function (d) {
+    d.documentElement.classList.add('js');
+    try { if (sessionStorage.getItem('gcd-nav') === '1') { d.documentElement.classList.add('is-entering'); sessionStorage.removeItem('gcd-nav'); } } catch (e) {}
+  })(document);
+</script>
+<!-- @end head -->
+<title>Our Menu | Girish Cold Drinks</title>
+<meta name="description" content="Explore the Girish Cold Drinks menu by category: lassi, milk shakes, fresh fruit juices, faluda, thandai, cold coco, ice cream, shrikhand, pizza, sandwiches, bhel and instant premixes.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Girish Cold Drinks">
+<meta property="og:title" content="Our Menu | Girish Cold Drinks">
+<meta property="og:description" content="Explore the Girish Cold Drinks menu by category: lassi, milk shakes, fresh fruit juices, faluda, thandai, cold coco, ice cream, shrikhand, pizza, sandwiches, bhel and instant premixes.">
+<meta property="og:image" content="assets/images/products/lassi-900.webp">
+<meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body data-page="menu">
+<!-- @include header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="curtain" aria-hidden="true"><img src="assets/logo.svg" alt="" width="34" height="90"></div>
+<header class="header" id="top">
+  <div class="wrap header__inner">
+    <a class="brand" href="index.html" aria-label="Girish Cold Drinks — home">
+      <span class="brand__badge"><img src="assets/logo.svg" alt="" width="17" height="45"></span>
+      <span class="brand__name">Girish<small>Cold Drinks</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About Us</a></li>
+        <li><a class="nav__link" href="menu.html" aria-current="page">Our Menu</a></li>
+        <li><a class="nav__link" href="history.html">Our History</a></li>
+        <li><a class="nav__link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--sm header__cta" href="menu.html">Explore Menu <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="menu.html" aria-current="page">Our Menu</a>
+  <a href="history.html">Our History</a>
+  <a href="contact.html">Contact Us</a>
+  <a class="btn" href="menu.html">Explore Our Menu <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <p class="drawer__foot">C. G. Road, Navrangpura, Ahmedabad<br>Open daily 10:30 AM – 12:00 AM · <a href="tel:+918799460328">087994 60328</a></p>
+</div>
+<!-- @end header -->
+<main id="main">
+
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="wrap page-hero__grid">
+    <div>
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Our Menu</span></li></ol></nav>
+      <h1 id="page-title" data-split>Our <em>Menu</em></h1>
+      <p class="lead" data-reveal="up" style="--rd:.2s">Every item from our menu board, grouped by category. Pick a category to see what’s inside — or search for a favourite.</p>
+      <form class="menu-tools" id="menu-form" role="search" data-reveal="up" style="--rd:.3s">
+        <div class="seg" role="group" aria-label="Filter categories by type">
+          <button type="button" data-group="all" aria-pressed="true">All</button>
+          <button type="button" data-group="drinks" aria-pressed="false">Cold Drinks</button>
+          <button type="button" data-group="desserts" aria-pressed="false">Desserts</button>
+          <button type="button" data-group="snacks" aria-pressed="false">Snacks</button>
+          <button type="button" data-group="premix" aria-pressed="false">Premix</button>
+        </div>
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <label class="sr-only" for="menu-search">Search the menu</label>
+          <input id="menu-search" type="search" placeholder="Search e.g. mango, cheese, kesar…" autocomplete="off" aria-describedby="menu-status">
+          <button class="search__clear" type="button" aria-label="Clear search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        </div>
+      </form>
+    </div>
+    <div class="page-hero__art" aria-hidden="true" data-depth-root>
+        <div class="pa pa--2" data-depth="-16"><div class="float float--slow"><img src="assets/images/products/pizza-900.webp" srcset="assets/images/products/pizza-480.webp 480w, assets/images/products/pizza-900.webp 900w" sizes="(max-width: 1023px) 32vw, 170px" width="900" height="1293" alt="" loading="lazy" decoding="async"></div></div>
+        <div class="pa pa--1" data-depth="14"><div class="float"><img src="assets/images/products/lassi-900.webp" srcset="assets/images/products/lassi-480.webp 480w, assets/images/products/lassi-900.webp 900w" sizes="(max-width: 1023px) 40vw, 210px" width="900" height="1166" alt="" fetchpriority="high" decoding="async"></div></div>
+        <div class="pa pa--3" data-depth="-24"><div class="float float--delay"><img src="assets/images/products/faluda-900.webp" srcset="assets/images/products/faluda-480.webp 480w, assets/images/products/faluda-900.webp 900w" sizes="(max-width: 1023px) 32vw, 170px" width="900" height="1329" alt="" loading="lazy" decoding="async"></div></div>
+      </div>
+  </div>
+  <svg class="edge edge--bottom" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff8ec" d="M0 48 C 180 92, 420 6, 720 40 S 1260 92, 1440 34 V90 H0 Z"/></svg>
+</section>
+<section class="menu-main" aria-label="Menu">
+  <div class="wrap">
+    <p class="menu-status" id="menu-status" aria-live="polite"></p>
+    <div id="menu-root">
+<noscript><div class="menu-noscript">
+<h2>Lassi</h2><ul><li>Sweet Lassi</li><li>Rose Lassi</li><li>Mango Lassi</li><li>Sp. Kesar Kaju Lassi</li><li>Fruit Lassi</li><li>Jelly Lassi</li><li>Dry Fruit Lassi</li><li>Makhania Lassi</li><li>Salted Lassi</li></ul>
+<h2>Milk Shake</h2><ul><li>Chikku</li><li>Pineapple</li><li>Mango Pleasure</li><li>Chocolate</li><li>Strawberry</li><li>Mango</li><li>Black Current</li><li>Sitafal (Custard Apple) (Seasonal)</li><li>Mix Fruit</li><li>Cold Coffee</li><li>Khajoor (Seasonal)</li><li>Kaju-Anjir</li></ul>
+<h2>Fresh Fruit Juice</h2><ul><li>Mosambi</li><li>Orange (Seasonal)</li><li>Pineapple</li><li>Pineapple Mosambi (Mara Mari)</li><li>Black Grape</li><li>Cocktail</li><li>Dadam</li><li>Litchi</li><li>Apple</li><li>Orange Pina (Seasonal)</li><li>Ganga Jamna (Seasonal)</li><li>Water Melon (Seasonal)</li><li>Jamun (Seasonal)</li><li>Falsa (Seasonal)</li><li>Mosambi/Orange Mix Juice</li></ul>
+<h2>Faluda</h2><ul><li>Kesar</li><li>Rose</li><li>Strawberry</li><li>Chocolate</li><li>Sp. Lilagar Thandai</li><li>Rajwadi Faluda</li></ul>
+<h2>Special Thandai</h2><ul><li>Lilagar Thandai</li></ul>
+<h2>Cream Shake</h2><ul><li>Rose Cream</li><li>Kesar Cream</li></ul>
+<h2>Cold Coco</h2><ul><li>Cold Coco</li><li>Coco with chips</li><li>Coco with Nuts</li><li>Coco with Cashew</li></ul>
+<h2>Fruit Salad</h2><ul><li>Sp. Cream Fruit Salad</li><li>Cream Fruit Salad With Jelly</li><li>Icecream with Jelly</li></ul>
+<h2>Shrikhand &amp; Sweets</h2><ul><li>Kesar Elaychi</li><li>Mix Fruit</li><li>Kaju Draksh</li><li>Anjir Akhrot Matho</li><li>Cream Fruit Matho</li><li>Mango Matho</li><li>Sp. Kesar Pista Basudi</li><li>Rajbhog Matho</li></ul>
+<h2>Havmore Icecream (Scoop)</h2><ul><li>Vanilla</li><li>Strawberry</li><li>Kajudraksh</li><li>Butter Scotch</li><li>Chocolate Chips</li><li>Kesar Pista</li><li>Almond Carnival</li><li>American Nuts</li><li>Rajbhog</li></ul>
+<h2>Pizza</h2><ul><li>Italian Pizza</li><li>Jain Pizza</li><li>Pineapple Pizza</li><li>Cheese Bake Pizza (Italian)</li><li>Cheese Bake Pizza (Jain)</li><li>Sp. Girish Pizza (Dry fruits)</li></ul>
+<h2>Sandwich</h2><ul><li>Vegetable Sandwich (Only Jain)</li><li>Aloo Mutter Sandwich</li><li>Chutney Sandwich</li><li>Cheese Sandwich</li><li>Cheese Chutney Sandwich</li><li>Aloo Cheese Sandwich</li><li>Veg. Cheese Sandwich</li><li>Cheese Jam Sandwich</li><li>Mix Sandwich</li><li>3 In One</li><li>Club (Toast)</li></ul>
+<h2>Bhel</h2><ul><li>Sp. Bhel</li><li>Sp. Jain Bhel</li><li>Cheese Bhel</li></ul>
+<h2>Instant Premix</h2><ul><li>Khajur Makhana</li><li>Cold Coco</li><li>Thandai</li></ul>
+</div></noscript>
+    </div>
+    <p class="menu-foot" style="margin-top:48px;color:var(--ink-3);font-weight:600;font-size:1rem">Item names as listed on the Girish Cold Drinks menu board. Photos show the category and are representative.</p>
+  </div>
+</section>
+</main>
+<!-- @include footer -->
+<footer class="footer" aria-labelledby="footer-title">
+  <h2 class="sr-only" id="footer-title">Site footer</h2>
+  <div class="wrap f-grid">
+    <div class="f-brand">
+      <a class="brand" href="index.html" aria-label="Girish Cold Drinks — home">
+        <span class="brand__badge"><img src="assets/logo.svg" alt="" width="17" height="45" loading="lazy"></span>
+        <span class="brand__name">Girish<small>Cold Drinks</small></span>
+      </a>
+      <p>Chilled lassi, fresh fruit juices, creamy shakes, faluda, ice cream and tasty snacks — a refreshing stop on C. G. Road, Navrangpura.</p>
+      <p class="f-tagline">Legacy of taste</p>
+    </div>
+    <nav aria-label="Footer">
+      <h3 class="f-label">Explore</h3>
+      <ul class="f-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="history.html">Our History</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="f-contact">
+      <h3 class="f-label">Visit Us</h3>
+      <address>
+        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span>GROUND FLOOR, Abhishek Complex, 1, Chimanlal Girdharlal Road, near Girish Cold Drinks, Mithakhali, Navrangpura, Ahmedabad, Gujarat 380006, India</span></p>
+        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+918799460328">087994 60328</a></p>
+        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3 2"/></svg><span>Monday – Sunday<br>10:30 AM – 12:00 AM</span></p>
+      </address>
+    </div>
+    <div>
+      <h3 class="f-label">On the menu</h3>
+      <ul class="f-pills">
+        <li><a href="menu.html#lassi"><img src="assets/images/products/lassi-480.webp" alt="" width="30" height="30" loading="lazy">Lassi</a></li>
+        <li><a href="menu.html#milk-shake"><img src="assets/images/products/milk-shake-480.webp" alt="" width="30" height="30" loading="lazy">Milk Shake</a></li>
+        <li><a href="menu.html#fresh-fruit-juice"><img src="assets/images/products/fruit-juice-480.webp" alt="" width="30" height="30" loading="lazy">Fresh Juice</a></li>
+        <li><a href="menu.html#faluda"><img src="assets/images/products/faluda-480.webp" alt="" width="30" height="30" loading="lazy">Faluda</a></li>
+        <li><a href="menu.html#cold-coco"><img src="assets/images/products/cold-coco-480.webp" alt="" width="30" height="30" loading="lazy">Cold Coco</a></li>
+        <li><a href="menu.html#havmore-icecream"><img src="assets/images/products/icecream-480.webp" alt="" width="30" height="30" loading="lazy">Ice Cream</a></li>
+        <li><a href="menu.html#pizza"><img src="assets/images/products/pizza-480.webp" alt="" width="30" height="30" loading="lazy">Pizza</a></li>
+        <li><a href="menu.html#sandwich"><img src="assets/images/products/sandwich-480.webp" alt="" width="30" height="30" loading="lazy">Sandwich</a></li>
+        <li><a href="menu.html#bhel"><img src="assets/images/products/bhel-480.webp" alt="" width="30" height="30" loading="lazy">Bhel</a></li>
+        <li><a href="menu.html#instant-premix"><img src="assets/images/products/khajur-makhana-480.webp" alt="" width="30" height="30" loading="lazy">Instant Premix</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="f-word" aria-hidden="true">Girish Cold Drinks</div>
+  <div class="wrap f-bottom">
+    <p>© <span data-year>2026</span> Girish Cold Drinks. All rights reserved.</p>
+    <a class="f-top" href="#top">Back to top <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span></a>
+  </div>
+</footer>
+<!-- @end footer -->
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/menu.js" defer></script>
+</body>
+</html>
