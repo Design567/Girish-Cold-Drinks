@@ -261,16 +261,22 @@ address { font-style: normal; }
 .header.is-scrolled .nav__link::after { background: var(--royal); }
 .header__cta { flex: none; }
 .burger {
-  display: none; margin-left: auto;
-  width: 52px; height: 52px; border-radius: 16px; border: 0;
-  background: rgba(255,255,255,.14); color: inherit;
-  place-items: center;
+  display: none; margin-left: auto; position: relative; flex: 0 0 48px;
+  width: 48px; height: 48px; padding: 0; border-radius: 14px; border: 0;
+  background: rgba(255,255,255,.16); color: #fff;
+  place-items: center; cursor: pointer; z-index: 102;
+  -webkit-tap-highlight-color: transparent;
 }
-.header.is-scrolled .burger { background: rgba(7,22,64,.07); }
-.burger span { display: block; width: 22px; height: 2.5px; border-radius: 2px; background: currentColor; margin: 4px auto; transition: transform .35s var(--ease), opacity .2s; }
-.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.header.is-scrolled .burger { background: rgba(7,22,64,.08); color: var(--navy); }
+.burger span { position: absolute; left: 13px; display: block; width: 22px; height: 2px; border-radius: 2px; background: currentColor; margin: 0; transform-origin: center; transition: top .25s var(--ease), transform .25s var(--ease), opacity .18s ease, background-color .2s ease; }
+.burger span:nth-child(1) { top: 15px; }
+.burger span:nth-child(2) { top: 23px; }
+.burger span:nth-child(3) { top: 31px; }
+.burger[aria-expanded="true"] { background: var(--royal); color: #fff; }
+.burger[aria-expanded="true"] span:nth-child(1) { top: 23px; transform: rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; transform: scaleX(.3); }
+.burger[aria-expanded="true"] span:nth-child(3) { top: 23px; transform: rotate(-45deg); }
+.burger:focus-visible { outline: 3px solid var(--mango); outline-offset: 3px; }
 
 .drawer {
   position: fixed; inset: 0; z-index: 99;
